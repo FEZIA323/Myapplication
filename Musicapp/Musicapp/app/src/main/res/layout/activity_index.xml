@@ -1,0 +1,70 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:background="#ffffff"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd" />
+
+            <RadioGroup
+                android:id="@+id/rGrp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/bag"
+                android:layout_marginTop="1dp"
+                >
+                <RadioButton
+                    android:id="@+id/indexs_activity_jinzhanguanli"
+                    style="@style/RBtnTabStyle"
+                    android:checked="true"
+
+                    android:textColor="#0aaaf9"
+                    android:text="首页"
+                    />
+
+
+
+                <RadioButton
+                    android:id="@+id/indexs_activity_yuanchengfuzhu"
+                    style="@style/RBtnTabStyle"
+                    android:textColor="#666666"
+                    android:text="个人中心" />
+            </RadioGroup>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
