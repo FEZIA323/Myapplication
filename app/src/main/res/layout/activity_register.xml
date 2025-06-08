@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bag">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="现在免费注册，开始冥想和探索Medic"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"></TextView>
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:hint="Name"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/main_textcolor9"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:id="@+id/edit_mail"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:hint="Email Address"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/main_textcolor9"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/edit_psw"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/main_textcolor9"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:checked="true">
+        </CheckBox>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="勾选同意您服务条款和隐私政策 "
+            android:textSize="13dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"></TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rela_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/with_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>

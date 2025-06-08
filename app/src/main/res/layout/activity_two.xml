@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bag">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼吸$放松 "
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在呼吸的引导下，开始训练，试着调整你的呼吸节奏"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"></TextView>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/houzi"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:00"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"></TextView>
+    <RelativeLayout
+        android:id="@+id/rela_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/with_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"></TextView>
+    </RelativeLayout>
+</LinearLayout>

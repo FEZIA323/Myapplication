@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Music_app</string>
+
+    <dimen name="titlebar_textsize">52px</dimen>
+</resources>
