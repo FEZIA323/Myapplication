@@ -83,11 +83,11 @@ public class TypeTextView extends TextView {
             mTypeTimer = null;
         }
     }
-
     private void startAudioPlayer() {
         stopAudio();
         playAudio( R.raw.type_in );
     }
+
 
     private void playAudio( int audioResId ){
         try{
@@ -115,7 +115,6 @@ public class TypeTextView extends TextView {
                 public void run() {
                     if( getText( ).toString( ).length( ) < mShowTextString.length( ) ){
                         setText( mShowTextString.substring(0, getText( ).toString( ).length( ) + 1 ) );
-                        startAudioPlayer();
                         startTypeTimer( );
                     }else{
                         stopTypeTimer( );

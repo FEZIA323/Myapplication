@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.music_app"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -18,7 +18,11 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            // 启用代码压缩、混淆和优化
+            minifyEnabled true
+            // 启用资源压缩（需配合代码压缩）
+            shrinkResources true
+
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -52,23 +56,27 @@ dependencies {
 
     //glide图片加载框架
     implementation 'com.github.bumptech.glide:glide:4.11.0'
-    //recyclerview
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
     compile 'com.google.code.gson:gson:2.7'
     //网络请求
-    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+
     implementation 'de.hdodenhof:circleimageview:2.1.0'
-    implementation 'com.github.bumptech.glide:glide:3.6.1'
-    implementation 'com.github.wildma:PictureSelector:2.1.0'
+
     implementation 'com.google.android.material:material:1.0.0'
     annotationProcessor 'androidx.room:room-compiler:2.2.2'
-    /*recyclerView 万能适配器*/
-    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.36'
+
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
     annotationProcessor 'androidx.room:room-compiler:2.2.2'
 
-    implementation "com.alibaba.xingchen:xingchen-java-client:1.0.8"
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    implementation 'com.caverock:androidsvg:1.4'
+
+
+}
+android {
+    buildTypes {
+        release {
+            minifyEnabled true   // 启用代码压缩
+            shrinkResources true // 移除无用资源
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 }

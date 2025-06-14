@@ -42,7 +42,7 @@ public class WebViewActivity extends Activity {
         help_web.getSettings().setJavaScriptEnabled(true);
         help_web.setWebChromeClient(new MyWebChromeClient());
 
-        help_web.loadUrl("https://www.bilibili.com/");
+        help_web.loadUrl("https://www.tree.fm/");
 
         help_web.setWebViewClient(new WebViewClient() {
             @Override
